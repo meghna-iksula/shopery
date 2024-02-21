@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_width" xsi:type="number">170</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceContainer name="header.container">
+            <container name="headerWrapper" htmlClass="headerWrapper" htmlTag="div">
+                <container name="headerdetailswrapper" htmlClass="headerdetailswrapper"
+                    htmlTag="div">
+                    <block class="Magento\Framework\View\Element\Template" name="headerdetails"
+                        before="-" template="Magento_Theme::html/headerdetails.phtml" />
+                </container>
+                <container name="bottomHeaderwrapper" htmlClass="bottomHeaderwrapper" htmlTag="div">
+                    <container name="bottomHeadercontent" htmlClass="bottomHeadercontent"
+                        htmlTag="div">
+                        <container name="searchcontainer" htmlTag="div" htmlClass="searchcontainer" />
+                        <container name="rightdetailwrapper" htmlTag="div"
+                            htmlClass="rightdetailwrapper" />
+                    </container>
+                </container>
+            </container>
+        </referenceContainer>
+
+        <move element="logo" destination="bottomHeadercontent" before="-" />
+        <move element="top.search" destination="searchcontainer" after="logo" />
+        <move element="wish-list-link" destination="rightdetailwrapper" before="-" />
+        <move element="minicart" destination="rightdetailwrapper" after="wish-list-link" />
+        <move element="currency" destination="rightdetailwrapper" after="minicart" />
+        <referenceBlock name="my-account-link" remove="true" />
+        <referenceBlock name="register-link" remove="true" />
+        <referenceBlock name="header" remove="true" />
+        <referenceBlock name="currency" remove="false" />
+    </body>
+</page>
