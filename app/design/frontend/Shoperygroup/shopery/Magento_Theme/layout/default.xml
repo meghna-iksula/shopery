@@ -19,6 +19,8 @@
                     htmlTag="div">
                     <block class="Magento\Framework\View\Element\Template" name="headerdetails"
                         before="-" template="Magento_Theme::html/headerdetails.phtml" />
+                    <container name="elements-wrapper" htmlTag="div" htmlClass="elements-wrapper">
+                    </container>
                 </container>
                 <container name="bottomHeaderwrapper" htmlClass="bottomHeaderwrapper" htmlTag="div">
                     <container name="bottomHeadercontent" htmlClass="bottomHeadercontent"
@@ -35,8 +37,8 @@
         <move element="top.search" destination="searchcontainer" after="logo" />
         <move element="wish-list-link" destination="rightdetailwrapper" before="-" />
         <move element="minicart" destination="rightdetailwrapper" after="wish-list-link" />
-        <move element="currency" destination="rightdetailwrapper" after="minicart" />
-        <move element="authorization-link" destination="rightdetailwrapper" after="currency" />
+        <move element="currency" destination="elements-wrapper" before="-" />
+        <move element="authorization-link" destination="elements-wrapper" after="currency" />
         <!-- <move element="store-language" destination="rightdetailwrapper" after="currency" /> -->
         <referenceBlock name="my-account-link" remove="true" />
         <referenceBlock name="register-link" remove="true" />

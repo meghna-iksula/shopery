@@ -3,15 +3,23 @@
     .bottomHeaderwrapper {
         .searchcontainer {
             .form.minisearch {
+                .control {
+                    &::before {
+                        content: "\e903";
+                        font-family: "icomoon";
+                        position: absolute;
+                        padding: 7px 10px 5px;
+                    }
+                    input {
+                        padding-left: 30px;
+                        width: 300px;
+                    }
+                }
                 input {
                     border-radius: 5px;
-                    font-size: 12px;
+                    font-size: 14px;
                     &::placeholder {
                         color: #808080;
-                    }
-                    &::before {
-                        content: url("../../images/Search.svg");
-                        position: absolute;
                     }
                 }
             }
@@ -38,25 +46,11 @@
                     }
                 }
             }
-            .switcher.currency.switcher-currency {
-                .label.switcher-label {
-                    display: none;
-                }
-                .action.toggle.switcher-trigger {
-                    span {
-                        display: none;
-                    }
-                }
-                ul.dropdown.switcher-dropdown {
-                    list-style: none;
-                    li a:hover {
-                        text-decoration: none;
-                    }
-                }
-            }
+            
         }
     }
 }
+
 .headerWrapper {
     .bottomHeadercontent {
         display: flex;
@@ -72,6 +66,23 @@
         .rightdetailwrapper {
             list-style: none;
             display: flex;
+        }
+    }
+}
+
+.switcher.currency.switcher-currency {
+    .label.switcher-label {
+        display: none;
+    }
+    .action.toggle.switcher-trigger {
+        span {
+            display: none;
+        }
+    }
+    ul.dropdown.switcher-dropdown {
+        list-style: none;
+        li a:hover {
+            text-decoration: none;
         }
     }
 }
