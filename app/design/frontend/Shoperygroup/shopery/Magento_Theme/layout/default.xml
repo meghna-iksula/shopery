@@ -36,9 +36,12 @@
         <move element="wish-list-link" destination="rightdetailwrapper" before="-" />
         <move element="minicart" destination="rightdetailwrapper" after="wish-list-link" />
         <move element="currency" destination="rightdetailwrapper" after="minicart" />
+        <move element="authorization-link" destination="rightdetailwrapper" after="currency" />
+        <!-- <move element="store-language" destination="rightdetailwrapper" after="currency" /> -->
         <referenceBlock name="my-account-link" remove="true" />
         <referenceBlock name="register-link" remove="true" />
         <referenceBlock name="header" remove="true" />
         <referenceBlock name="currency" remove="false" />
+        <referenceBlock name="store-language" remove="false"/>
     </body>
 </page>

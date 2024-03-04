@@ -1,0 +1,77 @@
+.headerWrapper {
+    margin: 0 30px;
+    .bottomHeaderwrapper {
+        .searchcontainer {
+            .form.minisearch {
+                input {
+                    border-radius: 5px;
+                    font-size: 12px;
+                    &::placeholder {
+                        color: #808080;
+                    }
+                    &::before {
+                        content: url("../../images/Search.svg");
+                        position: absolute;
+                    }
+                }
+            }
+        }
+        .rightdetailwrapper {
+            font-size: 18px;
+            .minicart-wrapper .action.showcart:before {
+                font-family: "icomoon";
+                content: "\e901";
+                font-size: 24px;
+                color: #000;
+            }
+
+            .link.wishlist {
+                a {
+                    &:before {
+                        font-family: "icomoon";
+                        content: "\e900";
+                        font-size: 24px;
+                        color: #000;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            .switcher.currency.switcher-currency {
+                .label.switcher-label {
+                    display: none;
+                }
+                .action.toggle.switcher-trigger {
+                    span {
+                        display: none;
+                    }
+                }
+                ul.dropdown.switcher-dropdown {
+                    list-style: none;
+                    li a:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.headerWrapper {
+    .bottomHeadercontent {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            margin: 0;
+        }
+        .searchcontainer {
+            .nested {
+                display: none;
+            }
+        }
+        .rightdetailwrapper {
+            list-style: none;
+            display: flex;
+        }
+    }
+}
