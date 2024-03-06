@@ -2,6 +2,10 @@
     display: none;
 }
 
+.page-title-wrapper {
+    display: none;
+}
+
 .location {
     display: inline-flex;
     align-items: center;
@@ -17,18 +21,7 @@
     }
 }
 
-.headerdetailswrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    .location::before {
-        background: url("../../images/location.svg");
-    }
 
-    .elements-wrapper {
-        display: flex;
-    }
-}
 .sections.nav-sections {
     .navigation {
         background: #333333;
@@ -46,4 +39,10 @@
             }
         } 
     }
+}
+
+.navigation .level0.active > .level-top, .navigation .level0.has-active > .level-top {
+    border: none;
+    font-weight: 700;
+    color: #fff;
 }

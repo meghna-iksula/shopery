@@ -1,8 +1,51 @@
 .headerWrapper {
     margin: 0 30px;
+
+    .headerdetailswrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        .location::before {
+            background: url("../../images/location.svg");
+        }
+    }
+
+    .elements-wrapper {
+        display: flex;
+        font-size: 12px;
+        a {
+            color: #333;
+        }
+        .switcher.currency.switcher-currency {
+            margin-inline-end: 20px;
+            .label.switcher-label {
+                display: none;
+            }
+            .action.toggle.switcher-trigger {
+                span {
+                    display: none;
+                }
+            }
+            ul.dropdown.switcher-dropdown {
+                list-style: none;
+                li a:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .link.authorization-link {
+            list-style: none;
+        }
+    }
+
     .bottomHeaderwrapper {
         .searchcontainer {
+            .block-search {
+                width: fit-content;
+            }
             .form.minisearch {
+                display: flex;
                 .control {
                     &::before {
                         content: "\e903";
@@ -13,40 +56,72 @@
                     input {
                         padding-left: 30px;
                         width: 300px;
+                        &:focus {
+                            box-shadow: none;
+                        }
                     }
                 }
                 input {
                     border-radius: 5px;
-                    font-size: 14px;
+                    font-size: 12px;
                     &::placeholder {
                         color: #808080;
+                    }
+                }
+                .actions {
+                    button.action.search {
+                        background: #00b207;
+                        color: #fff;
+                        opacity: 1;
+                        width: 90px;
+                        height: 32px;
+                        position: relative;
+                        border-radius: 0 5px 5px 0;
+                        font-size: 12px;
+                        &::before {
+                            display: none;
+                        }
+                        span {
+                            position: relative;
+                        }
                     }
                 }
             }
         }
         .rightdetailwrapper {
             font-size: 18px;
-            .minicart-wrapper .action.showcart:before {
-                font-family: "icomoon";
-                content: "\e901";
-                font-size: 24px;
-                color: #000;
+            padding: 0 20px;
+            .minicart-wrapper {
+                margin-left: 25px;
+                .action.showcart:before {
+                    font-family: "icomoon";
+                    content: "\e901";
+                    font-size: 24px;
+                    color: #1a1a1a;
+                }
+                &:hover {
+                    .action.showcart:before {
+                        color: #00b207;
+                    }
+                }
             }
 
             .link.wishlist {
                 a {
-                    &:before {
+                    &::before {
                         font-family: "icomoon";
                         content: "\e900";
                         font-size: 24px;
-                        color: #000;
+                        color: #1a1a1a;
                     }
                     &:hover {
                         text-decoration: none;
+                        &::before {
+                            color: #00b207;
+                        }
                     }
                 }
             }
-            
         }
     }
 }
@@ -66,23 +141,6 @@
         .rightdetailwrapper {
             list-style: none;
             display: flex;
-        }
-    }
-}
-
-.switcher.currency.switcher-currency {
-    .label.switcher-label {
-        display: none;
-    }
-    .action.toggle.switcher-trigger {
-        span {
-            display: none;
-        }
-    }
-    ul.dropdown.switcher-dropdown {
-        list-style: none;
-        li a:hover {
-            text-decoration: none;
         }
     }
 }

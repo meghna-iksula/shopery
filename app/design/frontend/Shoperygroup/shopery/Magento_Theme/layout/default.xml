@@ -17,8 +17,8 @@
             <container name="headerWrapper" htmlClass="headerWrapper" htmlTag="div">
                 <container name="headerdetailswrapper" htmlClass="headerdetailswrapper"
                     htmlTag="div">
-                    <block class="Magento\Framework\View\Element\Template" name="headerdetails"
-                        before="-" template="Magento_Theme::html/headerdetails.phtml" />
+                    <block class="Magento\Framework\View\Element\Template" name="location"
+                        before="-" template="Magento_Theme::html/location.phtml" />
                     <container name="elements-wrapper" htmlTag="div" htmlClass="elements-wrapper">
                     </container>
                 </container>
@@ -27,7 +27,10 @@
                         htmlTag="div">
                         <container name="searchcontainer" htmlTag="div" htmlClass="searchcontainer" />
                         <container name="rightdetailwrapper" htmlTag="div"
-                            htmlClass="rightdetailwrapper" />
+                            htmlClass="rightdetailwrapper">
+                            <block class="Magento\Framework\View\Element\Template" name="wishlistLink"
+                         template="Magento_Theme::html/wishlistLink.phtml" />
+                            </container>
                     </container>
                 </container>
             </container>
@@ -35,11 +38,9 @@
 
         <move element="logo" destination="bottomHeadercontent" before="-" />
         <move element="top.search" destination="searchcontainer" after="logo" />
-        <move element="wish-list-link" destination="rightdetailwrapper" before="-" />
-        <move element="minicart" destination="rightdetailwrapper" after="wish-list-link" />
+        <move element="minicart" destination="rightdetailwrapper" after="wishlistLink" />
         <move element="currency" destination="elements-wrapper" before="-" />
         <move element="authorization-link" destination="elements-wrapper" after="currency" />
-        <!-- <move element="store-language" destination="rightdetailwrapper" after="currency" /> -->
         <referenceBlock name="my-account-link" remove="true" />
         <referenceBlock name="register-link" remove="true" />
         <referenceBlock name="header" remove="true" />
