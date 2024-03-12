@@ -35,16 +35,25 @@
                 </container>
             </container>
         </referenceContainer>
+        <referenceContainer name="footer">
+        <container name="footerwrapper" htmlTag="div" /> 
+        </referenceContainer>
 
         <move element="logo" destination="bottomHeadercontent" before="-" />
         <move element="top.search" destination="searchcontainer" after="logo" />
         <move element="minicart" destination="rightdetailwrapper" after="wishlistLink" />
         <move element="currency" destination="elements-wrapper" before="-" />
         <move element="authorization-link" destination="elements-wrapper" after="currency" />
+        <move element="absolute_footer" destination="footerwrapper" after="-"/>
         <referenceBlock name="my-account-link" remove="true" />
         <referenceBlock name="register-link" remove="true" />
         <referenceBlock name="header" remove="true" />
         <referenceBlock name="currency" remove="false" />
         <referenceBlock name="store-language" remove="false"/>
+        <referenceBlock name="footer_links" remove="true" />
+        <referenceBlock name="copyright" remove="true" />
+        <referenceBlock name="report.bugs" remove="true" />
+        <referenceBlock name="store_switcher" remove="true" />
+        <referenceBlock name="form.subscribe" remove="true" />
     </body>
 </page>
