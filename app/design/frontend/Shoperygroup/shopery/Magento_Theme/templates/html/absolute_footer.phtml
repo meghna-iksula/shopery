@@ -17,28 +17,28 @@
             <div class="links-content">
                 <h3>My Account</h3>
                 <ul>
-                    <li><a href="#"> My Account </a></li>
-                    <li><a href="#"> Order History </a></li>
-                    <li><a href="#"> Shoping Cart </a></li>
-                    <li><a href="#"> Wishlist </a></li>
+                    <li><a href="<?php echo $block->getUrl('customer/account'); ?>"> My Account </a></li>
+                    <li><a href="<?php echo $block->getUrl('sales/order/history'); ?>"> Order History </a></li>
+                    <li><a href="<?php echo $block->getUrl('checkout/cart'); ?>"> Shoping Cart </a></li>
+                    <li><a href="<?php echo $block->getUrl('wishlist'); ?>"> Wishlist </a></li>
                 </ul>
             </div>
             <div class="links-content">
                 <h3>Helps</h3>
                 <ul>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Faqs</a></li>
-                    <li><a href="#">Terms & Condition</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="<?php echo $block->getUrl('contact'); ?>">Contact</a></li>
+                    <li><a href="<?php echo $block->getUrl('faq'); ?>">Faqs</a></li>
+                    <li><a href="<?php echo $block->getUrl('terms-conditions'); ?>">Terms & Condition</a></li>
+                    <li><a href="<?php echo $block->getUrl('privacy-policy-cookie-restriction-mode'); ?>">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="links-content">
                 <h3>Proxy</h3>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li><a href="<?php echo $block->getUrl('about-us.html'); ?>">About</a></li>
+                    <li><a href="<?php echo $block->getUrl('shop.html'); ?>">Shop</a></li>
                     <li><a href="#">Product</a></li>
-                    <li><a href="#">Track Order</a></li>
+                    <li><a href="<?php echo $block->getUrl('sales/order/history'); ?>">Track Order</a></li>
                 </ul>
             </div>
             <div class="links-content">
