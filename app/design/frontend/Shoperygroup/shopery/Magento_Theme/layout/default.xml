@@ -13,6 +13,8 @@
                 <argument name="logo_width" xsi:type="number">170</argument>
             </arguments>
         </referenceBlock>
+        
+        <!-- Header -->
         <referenceContainer name="header.container">
             <container name="headerWrapper" htmlClass="headerWrapper" htmlTag="div">
                 <container name="headerdetailswrapper" htmlClass="headerdetailswrapper"
@@ -35,15 +37,29 @@
                 </container>
             </container>
         </referenceContainer>
-        <referenceContainer name="footer">
-        <container name="footerwrapper" htmlTag="div" /> 
-        </referenceContainer>
-
         <move element="logo" destination="bottomHeadercontent" before="-" />
         <move element="top.search" destination="searchcontainer" after="logo" />
         <move element="minicart" destination="rightdetailwrapper" after="wishlistLink" />
         <move element="currency" destination="elements-wrapper" before="-" />
         <move element="authorization-link" destination="elements-wrapper" after="currency" />
+
+        <!-- Navigation-Menu -->
+        <referenceContainer name="page.top">
+            <referenceBlock name="navigation-sections">
+                <referenceBlock name="store.menu">
+                    <referenceBlock name="catalog.topnav">
+                        <container name="contact-nav-link" htmlClass="contact-link-wrapper" htmlTag="div">
+                            <block class="Magento\Framework\View\Element\Template" name="contact-link-block" template="Magento_Theme::html/contact-nav-link.phtml" />
+                        </container>
+                    </referenceBlock>
+                </referenceBlock>
+            </referenceBlock>
+        </referenceContainer>
+
+        <!-- Footer -->
+        <referenceContainer name="footer">
+        <container name="footerwrapper" htmlTag="div" /> 
+        </referenceContainer>
         <move element="absolute_footer" destination="footerwrapper" after="-"/>
         <referenceBlock name="my-account-link" remove="true" />
         <referenceBlock name="register-link" remove="true" />
