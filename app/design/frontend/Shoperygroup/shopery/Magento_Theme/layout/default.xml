@@ -58,9 +58,15 @@
 
         <!-- Footer -->
         <referenceContainer name="footer">
-        <container name="footerwrapper" htmlTag="div" /> 
+            <container name="footer-top-wrapper" htmlTag="div" htmlClass="footer-top-wrapper">
+                <block class="Magento\Framework\View\Element\Template" name="subscribe.letter" template="Magento_Theme::html/subscribe-letter.phtml" />
+                <block class="Magento\Framework\View\Element\Template" name="social.media.links" template="Magento_Theme::html/social-media-links.phtml" />
+            </container>
+            <container name="footerwrapper" htmlTag="div" /> 
         </referenceContainer>
+
         <move element="absolute_footer" destination="footerwrapper" after="-"/>
+        <move element="form.subscribe" destination="footer-top-wrapper" after="subscribe.letter"/>
         <referenceBlock name="my-account-link" remove="true" />
         <referenceBlock name="register-link" remove="true" />
         <referenceBlock name="header" remove="true" />
@@ -70,6 +76,5 @@
         <referenceBlock name="copyright" remove="true" />
         <referenceBlock name="report.bugs" remove="true" />
         <referenceBlock name="store_switcher" remove="true" />
-        <referenceBlock name="form.subscribe" remove="true" />
     </body>
 </page>
