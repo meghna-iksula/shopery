@@ -5,6 +5,97 @@
     #page-title-heading {
         display: none;
     }
+    .toolbar-products {
+        display: none;
+    }
+}
+
+//Product styles on home page
+.block.widget .products-grid .product-item,
+.page-products .products-grid .product-item {
+    padding: 8px;
+}
+
+.product-item {
+    .product-item-info {
+        position: relative;
+        .product-item-details {
+            .product-item-inner {
+                position: absolute;
+                top: 15px;
+                bottom: 0;
+                right: 0;
+                z-index: 10;
+                .product-item-actions {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: space-between;
+                    height: 100%;
+                    .actions-primary {
+                        .action.tocart.primary {
+                            background: none;
+                            border: none;
+                            border-radius: 50%;
+                            padding: 12px;
+                            font-size: 20px;
+                            &::before {
+                                font-family: "icomoon";
+                                font-weight: normal;
+                                content: "\e901";
+                                color: #1a1a1a;
+                            }
+                            span {
+                                display: none;
+                            }
+                            &:hover {
+                                background: #00b207;
+                                &::before {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    .actions-secondary {
+                        .action.towishlist {
+                            &::before {
+                                font-size: 20px;
+                                color: #1a1a1a;
+                                line-height: normal;
+                                width: auto;
+                                padding: 12px;
+                                box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
+                                border-radius: 50%;
+                            }
+                            &:hover {
+                                &::before {
+                                    color: #fff;
+                                    background: #00b207;
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                        .action.tocompare {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .actions-secondary {
+        display: none;
+    }
+    &:hover {
+        box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+        .actions-secondary {
+            display: block;
+        }
+    }
+}
+
+//Product styles on the Product details page
+.products.wrapper {
+    margin: 30px;
 }
 
 .page-layout-1column {
@@ -40,5 +131,14 @@
                 position: absolute;
             }
         }
+    }
+}
+
+.product.media {
+    .fotorama__stage__frame .fotorama__img {
+        max-width: none;
+        max-height: none;
+        width: 200%;
+        height: auto;
     }
 }
