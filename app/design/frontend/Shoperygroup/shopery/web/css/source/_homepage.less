@@ -2,26 +2,13 @@
     .block.filter {
         display: none;
     }
+
     #page-title-heading {
         display: none;
     }
+
     .toolbar-products {
         display: none;
-    }
-}
-
-//Cart actions
-.minicart-items {
-    .action.edit::before {
-        font-family: "icomoon";
-        content: "\e904";
-        font-size: 22px;
-    }
-    .action.delete::before {
-        font-family: "icomoon";
-        content: "\e900";
-        font-size: 22px;
-        margin-inline: 10px;
     }
 }
 
@@ -36,17 +23,22 @@
     .product-item-info {
         position: relative;
         .product-item-details {
+            .reviews-actions {
+                display: none;
+            }
             .product-item-inner {
                 position: absolute;
                 top: 0;
                 bottom: 0;
                 right: 5px;
                 z-index: 10;
+
                 .product-item-actions {
                     display: flex;
                     flex-direction: column-reverse;
                     justify-content: space-between;
                     height: 100%;
+
                     .actions-primary {
                         .action.tocart.primary {
                             background: none;
@@ -54,23 +46,28 @@
                             border-radius: 50%;
                             padding: 12px;
                             font-size: 20px;
+
                             &::before {
                                 font-family: "icomoon";
                                 font-weight: normal;
                                 content: "\e901";
                                 color: #1a1a1a;
                             }
+
                             span {
                                 display: none;
                             }
+
                             &:hover {
                                 background: #00b207;
+
                                 &::before {
                                     color: #fff;
                                 }
                             }
                         }
                     }
+
                     .actions-secondary {
                         .action.towishlist {
                             &::before {
@@ -82,6 +79,7 @@
                                 box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
                                 border-radius: 50%;
                             }
+
                             &:hover {
                                 &::before {
                                     color: #fff;
@@ -90,6 +88,7 @@
                                 }
                             }
                         }
+
                         .action.tocompare {
                             display: none;
                         }
@@ -98,63 +97,16 @@
             }
         }
     }
+
     .actions-secondary {
         display: none;
     }
+
     &:hover {
         box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.4);
+
         .actions-secondary {
             display: block;
         }
-    }
-}
-
-//Product styles on the Product details page
-.products.wrapper {
-    margin: 30px;
-}
-
-.page-layout-1column {
-    .product.media {
-        width: 45%;
-    }
-    .product-info-main {
-        width: 50%;
-    }
-}
-.product-info-main .page-title-wrapper .page-title {
-    font-family: "Poppins";
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 43px;
-    color: #1a1a1a;
-}
-.product-add-form {
-    .fieldset {
-        button.action.primary.tocart {
-            width: 447px;
-            padding: 16px 40px;
-            gap: 16px;
-            border-radius: 43px;
-            font-weight: 600;
-            background: #00b207;
-            border: none;
-            span::after {
-                font-family: "icomoon";
-                content: "\e901";
-                font-size: 20px;
-                margin-inline-start: 8px;
-                position: absolute;
-            }
-        }
-    }
-}
-
-.product.media {
-    .fotorama__stage__frame .fotorama__img {
-        max-width: none;
-        max-height: none;
-        width: 200%;
-        height: auto;
     }
 }

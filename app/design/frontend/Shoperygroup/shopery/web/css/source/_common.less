@@ -15,11 +15,13 @@
 .location {
     display: inline-flex;
     align-items: center;
+
     &::before {
         content: "\e902";
         font-family: "icomoon";
         font-size: 18px;
     }
+
     p {
         font-size: 12px;
         margin: 0;
@@ -32,10 +34,32 @@
 .page-header .header.panel,
 .header.content,
 .footer.content,
-.page-wrapper > .widget,
-.page-wrapper > .page-bottom,
+.page-wrapper>.widget,
+.page-wrapper>.page-bottom,
 .block.category.event,
 .top-container,
 .page-main {
     max-width: none;
+}
+
+
+.block-heading {
+    font-weight: 600;
+    margin: 15px 30px;
+}
+
+//Minicart actions
+.minicart-items {
+    .action.edit::before {
+        font-family: "icomoon";
+        content: "\e904";
+        font-size: 22px;
+    }
+
+    .action.delete::before {
+        font-family: "icomoon";
+        content: "\e900";
+        font-size: 22px;
+        margin-inline: 10px;
+    }
 }
