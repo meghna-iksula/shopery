@@ -4,13 +4,17 @@
     padding: 0;
 }
 
+//Footer top container
 .footer-top-wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background: #e6e6e6;
     color: #1a1a1a;
     padding: 30px;
+    
+    //Text content block
     .subscribe-our-newsletter {
         max-width: 400px;
         h3 {
@@ -27,10 +31,12 @@
     }
 }
 
+//Form subscribe to the newsletter block
 .footer.content .block.newsletter {
     float: none;
-    margin: 0;
+    margin: 20px 0;
 }
+
 
 .form.subscribe {
     .action.subscribe.primary {
@@ -40,22 +46,18 @@
         border: none;
         border-radius: 43px;
     }
-
     .field.newsletter {
         max-width: 300px;
     }
-
     input {
         padding: 24px 0;
         background: #e6e6e6;
         border: none;
         font-family: "Poppins";
         font-size: 16px;
-
         &::placeholder {
             color: #808080;
         }
-
         &:focus {
             border: none;
             box-shadow: none;
@@ -63,12 +65,14 @@
     }
 }
 
-
+//Footer middle container
 .content-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
-
+    
+    //Footer logo and text container wrapper
     .logo-content-wrapper {
         width: 350px;
 
@@ -83,7 +87,8 @@
             text-align: left;
             color: #999999;
         }
-
+        
+        //Contact information
         .contact-links {
             span a {
                 color: #fff;
@@ -98,9 +103,10 @@
         }
     }
 
+    //Footer links
     .links-wrapper {
         display: flex;
-
+        flex-wrap: wrap;
         .links-content {
             min-width: 200px;
             letter-spacing: 0.5px;
@@ -125,6 +131,7 @@
 
                     &:hover {
                         color: #fff;
+                        text-decoration: none;
                     }
                 }
             }
@@ -132,8 +139,10 @@
     }
 }
 
+//Footer bottom container enclosing copyright and payments block
 .footer-bottom-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 30px 0;
     padding: 20px 0;
@@ -148,12 +157,11 @@
         margin: 0;
     }
 
+    //Payment methods block
     .payments {
         display: flex;
-
         .payment-method {
             width: 45px;
-
             img {
                 object-fit: contain;
                 padding: 5px;
