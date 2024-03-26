@@ -1,4 +1,7 @@
 .checkout-cart-index {
+    .page-main {
+        padding-inline: 30px;
+    }
     .page-title-wrapper {
         text-align: center;
 
@@ -153,6 +156,51 @@
         }
         .action.multicheckout {
             display: none;
+        }
+    }
+}
+.block.discount {
+    margin: 50px 0;
+    .title {
+        display: none;
+    }
+    #discount-coupon-form {
+        .fieldset {
+            display: flex;
+        }
+        .field {
+            display: flex;
+            align-items: center;
+        }
+        label {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            color: #1a1a1a;
+            padding: 0 20px 0 0;
+            text-align: start;
+            width: fit-content;
+        }
+        .control {
+            width: fit-content;
+            input {
+                padding: 14px 24px;
+                border-radius: 46px;
+                width: 530px;
+                height: 52px;
+            }
+        }
+        .actions-toolbar {
+            margin-left: -50px;
+        }
+        .action.apply.primary {
+            padding: 16px 40px;
+            border-radius: 43px;
+            background: #333333;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            border: none;
         }
     }
 }

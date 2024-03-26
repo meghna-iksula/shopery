@@ -28,14 +28,14 @@ $hasCouponCode = (bool) strlen($block->getCouponCode());
             <div class="fieldset coupon<?= $hasCouponCode ? ' applied' : '' ?>">
                 <input type="hidden" name="remove" id="remove-coupon" value="0" />
                 <div class="field">
-                    <label for="coupon_code" class="label"><span><?= $block->escapeHtml(__('Enter discount code')) ?></span></label>
+                    <label for="coupon_code" class="label"><span><?= $block->escapeHtml(__('Coupon code')) ?></span></label>
                     <div class="control">
                         <input type="text"
                                class="input-text"
                                id="coupon_code"
                                name="coupon_code"
                                value="<?= $block->escapeHtmlAttr($block->getCouponCode()) ?>"
-                               placeholder="<?= $block->escapeHtmlAttr(__('Enter discount code')) ?>"
+                               placeholder="<?= $block->escapeHtmlAttr(__('Enter code')) ?>"
                                 <?php if ($hasCouponCode) :?>
                                    disabled="disabled"
                                 <?php endif; ?>
@@ -45,8 +45,8 @@ $hasCouponCode = (bool) strlen($block->getCouponCode());
                 <div class="actions-toolbar">
                     <?php if (!$hasCouponCode) :?>
                     <div class="primary">
-                        <button class="action apply primary" type="button" value="<?= $block->escapeHtmlAttr(__('Apply Discount')) ?>">
-                            <span><?= $block->escapeHtml(__('Apply Discount')) ?></span>
+                        <button class="action apply primary" type="button" value="<?= $block->escapeHtmlAttr(__('Apply Coupon')) ?>">
+                            <span><?= $block->escapeHtml(__('Apply Coupon')) ?></span>
                         </button>
                     </div>
                     <?php else :?>
