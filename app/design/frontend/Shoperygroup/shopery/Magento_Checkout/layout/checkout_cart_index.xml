@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="checkout_cart_item_renderers"/>
+    <body>
+        <referenceContainer name="cart.summary">
+            <referenceBlock name="checkout.cart.summary.title">
+                <arguments>
+                    <argument translate="true" name="text" xsi:type="string">Cart Total</argument>
+                </arguments>
+            </referenceBlock>
+        </referenceContainer>
+        <move element="checkout.cart.coupon" destination="checkout.cart.items" after="checkout.cart.container" />
+    </body>
+</page>
