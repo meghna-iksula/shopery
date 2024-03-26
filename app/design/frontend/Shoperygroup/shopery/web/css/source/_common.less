@@ -6,9 +6,19 @@
     display: none;
 }
 
-.page-wrapper {
-    .breadcrumbs {
+.cms-home {
+    .page-title-wrapper {
         display: none;
+    }
+}
+
+//Breadcrumbs
+.category-home {
+    .breadcrumbs {
+        padding-inline: 30px;
+        li.home{
+            display: none;
+        }
     }
 }
 
@@ -34,14 +44,24 @@
 .page-header .header.panel,
 .header.content,
 .footer.content,
-.page-wrapper>.widget,
-.page-wrapper>.page-bottom,
+.page-wrapper > .widget,
+.page-wrapper > .page-bottom,
 .block.category.event,
 .top-container,
 .page-main {
     max-width: none;
 }
 
+//Displaying the hidden navigation-menu in the Checkout page.
+.checkout-index-index .nav-sections {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .checkout-index-index .nav-toggle {
+        display: block;
+    }
+}
 
 .block-heading {
     font-weight: 600;

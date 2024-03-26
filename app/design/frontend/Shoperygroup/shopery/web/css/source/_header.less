@@ -1,6 +1,5 @@
 .headerWrapper {
     margin: 0 30px;
-
     .headerdetailswrapper {
         display: flex;
         justify-content: space-between;
@@ -179,6 +178,17 @@
         .rightdetailwrapper {
             list-style: none;
             display: flex;
+        }
+    }
+}
+
+
+// Mobile Specific styles
+@media only screen and (max-width: 768px) {
+    .headerWrapper {
+        margin: 0 45px;
+        .searchcontainer {
+            display: none;
         }
     }
 }

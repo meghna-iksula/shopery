@@ -162,13 +162,13 @@
                 background: white;
                 color: #00b207;
                 border: 1px solid #00b207;
-                box-shadow: 0 2px 5px 2px rgba(127,127,127,0.4);
+                box-shadow: 0 2px 5px 2px rgba(127, 127, 127, 0.4);
             }
         }
     }
 }
 
-//Product image 
+//Product image
 .product.media {
     .fotorama__stage__frame .fotorama__img {
         max-width: none;
@@ -182,5 +182,18 @@
 .catalog-product-view {
     #reviews {
         display: none;
+    }
+}
+
+// Mobile Specific styles
+@media only screen and (max-width: 768px) {
+    .page-layout-1column {
+        .product.media {
+            width: 100%;
+        }
+
+        .product-info-main {
+            width: 100%;
+        }
     }
 }

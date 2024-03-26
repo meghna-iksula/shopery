@@ -60,8 +60,37 @@
     .navigation .level0.has-active > .level-top,
     .navigation .level0 > .level-top:hover,
     .navigation .level0 > .level-top.ui-state-focus {
-        all: unset;
         border: none;
         color: #fff;
+    }
+}
+
+// Mobile Specific styles
+@media only screen and (max-width: 768px) {
+    .sections.nav-sections {
+        .navigation {
+            background: #fff;
+            ul li a {
+                color: #1a1a1a;
+            }
+        }
+        .navigation .level0.active > .level-top,
+        .navigation .level0.has-active > .level-top,
+        .navigation .level0 > .level-top:hover,
+        .navigation .level0 > .level-top.ui-state-focus {
+            border: none;
+            color: #1a1a1a;
+        }
+    }
+
+    .navigation
+        .level0.active
+        > a:not(.ui-state-active)
+        span:not(.ui-menu-icon),
+    .navigation
+        .level0.has-active
+        > a:not(.ui-state-active)
+        span:not(.ui-menu-icon) {
+        margin-left: 0;
     }
 }
