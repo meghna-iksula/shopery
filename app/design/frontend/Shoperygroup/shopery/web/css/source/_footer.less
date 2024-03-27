@@ -1,57 +1,136 @@
 .footer.content {
     background: #333333;
-    color: #fff;
-    padding: 20px 30px;
+    border: none;
+    padding: 0;
 }
+
+//Footer top container
+.footer-top-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #e6e6e6;
+    color: #1a1a1a;
+    padding: 30px;
+
+    //Text content block
+    .subscribe-our-newsletter {
+        max-width: 400px;
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: 0.5px;
+            text-align: left;
+            margin: 0 0 5px;
+        }
+        p {
+            color: #999999;
+        }
+    }
+}
+
+//Form subscribe to the newsletter block
+.footer.content .block.newsletter {
+    float: none;
+    margin: 20px 0;
+}
+
+.form.subscribe {
+    .action.subscribe.primary {
+        font-size: 16px;
+        background: #00b207;
+        padding: 16px 40px;
+        border: none;
+        border-radius: 43px;
+    }
+    .field.newsletter {
+        max-width: 300px;
+    }
+    input {
+        padding: 24px 14px;
+        background: #e6e6e6;
+        border: none;
+        font-family: "Poppins";
+        font-size: 16px;
+        &::placeholder {
+            color: #808080;
+        }
+        &:focus {
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+
+//Footer middle container
 .content-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    padding: 30px;
+
+    //Footer logo and text container wrapper
     .logo-content-wrapper {
         width: 350px;
+
         img {
             margin: 20px 0;
         }
+
         p {
             font-size: 14px;
             font-weight: 400;
             line-height: 21px;
             text-align: left;
-            color: #808080;
+            color: #999999;
         }
+
+        //Contact information
         .contact-links {
-            span a{
+            span a {
                 color: #fff;
                 padding: 8px 0;
-                box-shadow: 0px 1.5px 0px 0px #20B526;
+                box-shadow: 0px 1.5px 0px 0px #20b526;
                 margin-inline: 5px;
+
                 &:hover {
                     text-decoration: none;
                 }
             }
         }
     }
+
+    //Footer links
     .links-wrapper {
         display: flex;
+        flex-wrap: wrap;
         .links-content {
-            min-width: 180px;
+            min-width: 200px;
             letter-spacing: 0.5px;
+
             h3 {
-                font-family: 'Poppins';
+                font-family: "Poppins";
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 24px;
                 margin-bottom: 20px;
+                color: #fff;
             }
-            ul li 
-            {
+
+            ul li {
                 margin: 8px 0;
+
                 a {
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 21px;
-                    color: #808080;
+                    color: #999999;
+
                     &:hover {
                         color: #fff;
+                        text-decoration: none;
                     }
                 }
             }
@@ -59,18 +138,25 @@
     }
 }
 
+//Footer bottom container enclosing copyright and payments block
 .footer-bottom-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px;
+    margin: 20px 30px 0;
+    padding: 20px 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+
     .copyright {
         font-size: 14px;
         letter-spacing: 0.5px;
         font-weight: 400;
         line-height: 21px;
-        color: #808080;
+        color: #999999;
         margin: 0;
     }
+
+    //Payment methods block
     .payments {
         display: flex;
         .payment-method {
@@ -78,6 +164,17 @@
             img {
                 object-fit: contain;
                 padding: 5px;
+            }
+        }
+    }
+}
+
+// Mobile Specific styles
+@media only screen and (max-width: 768px) {
+    .content-wrapper {
+        .links-wrapper {
+            .links-content {
+                min-width: 150px;
             }
         }
     }

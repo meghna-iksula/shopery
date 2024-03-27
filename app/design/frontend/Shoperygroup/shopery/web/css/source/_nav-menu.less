@@ -18,7 +18,16 @@
                     line-height: 21px;
                     padding: 0;
                     color: #fff;
+                    display: inline-flex;
                 }
+                #ui-id-2, #ui-id-3, #ui-id-4, #ui-id-5 {
+                    &::after {
+                        font-family: "icomoon";
+                        content: '\e701';
+                        font-size: 12px;
+                        margin-inline-start: 5px;
+                    }
+                } 
                 &:hover {
                     font-weight: 700;
                 }
@@ -60,8 +69,49 @@
     .navigation .level0.has-active > .level-top,
     .navigation .level0 > .level-top:hover,
     .navigation .level0 > .level-top.ui-state-focus {
-        all: unset;
         border: none;
         color: #fff;
+    }
+}
+
+// Mobile Specific styles
+@media only screen and (max-width: 768px) {
+    .sections.nav-sections {
+        .navigation {
+            background: #fff;
+            ul li a {
+                font-family: "Poppins";
+                color: #1a1a1a;
+                width: 100%;
+                justify-content: space-between;
+                font-weight: 500;
+                &::after {
+                    position: relative;
+                    right: 0;
+                    top: 0;
+                }
+            }
+            .ui-icon-carat-1-e {
+                display: none;
+            }
+        }
+        .navigation .level0.active > .level-top,
+        .navigation .level0.has-active > .level-top,
+        .navigation .level0 > .level-top:hover,
+        .navigation .level0 > .level-top.ui-state-focus {
+            border: none;
+            color: #1a1a1a;
+        }
+    }
+
+    .navigation
+        .level0.active
+        > a:not(.ui-state-active)
+        span:not(.ui-menu-icon),
+    .navigation
+        .level0.has-active
+        > a:not(.ui-state-active)
+        span:not(.ui-menu-icon) {
+        margin-left: 0;
     }
 }

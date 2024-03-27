@@ -6,20 +6,32 @@
     display: none;
 }
 
-.page-wrapper {
-    .breadcrumbs {
+.cms-home {
+    .page-title-wrapper {
         display: none;
+    }
+}
+
+//Breadcrumbs
+.category-home {
+    .breadcrumbs {
+        padding-inline: 30px;
+        li.home{
+            display: none;
+        }
     }
 }
 
 .location {
     display: inline-flex;
     align-items: center;
+
     &::before {
         content: "\e902";
         font-family: "icomoon";
         font-size: 18px;
     }
+
     p {
         font-size: 12px;
         margin: 0;
@@ -38,4 +50,36 @@
 .top-container,
 .page-main {
     max-width: none;
+}
+
+//Displaying the hidden navigation-menu in the Checkout page.
+.checkout-index-index .nav-sections {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .checkout-index-index .nav-toggle {
+        display: block;
+    }
+}
+
+.block-heading {
+    font-weight: 600;
+    margin: 15px 30px;
+}
+
+//Minicart actions
+.minicart-items {
+    .action.edit::before {
+        font-family: "icomoon";
+        content: "\e904";
+        font-size: 22px;
+    }
+
+    .action.delete::before {
+        font-family: "icomoon";
+        content: "\e900";
+        font-size: 22px;
+        margin-inline: 10px;
+    }
 }

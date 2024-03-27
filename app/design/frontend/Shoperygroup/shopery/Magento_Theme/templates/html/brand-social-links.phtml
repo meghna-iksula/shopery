@@ -1,0 +1,17 @@
+<div class="brand-links">
+    <div class="product-brand">
+        <span>Brand:</span>
+        <img src="<?php echo $this->getViewFileUrl('images/farmary.svg'); ?>">
+    </div>
+    <div class="product-links">
+        <span>Share item:</span>
+        <div>
+            <?php
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('social-media-links')
+            ->toHtml();
+            ?>
+        </div>
+    </div>
+</div>

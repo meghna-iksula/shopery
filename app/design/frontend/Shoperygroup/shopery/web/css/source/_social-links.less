@@ -1,0 +1,41 @@
+.social-links {
+    display: flex;
+    gap: 5px;
+
+    p {
+        margin: 0;
+        &::before {
+            margin: 0;
+            font-family: "icomoon";
+            font-size: 20px;
+            color: #4d4d4d;
+            padding: 10px;
+            border-radius: 50%;
+        }
+        &:hover {
+            cursor: pointer;
+            &::before {
+                color: #fff;
+                background: #00b207;
+            }
+        }
+    }
+
+    .facebook:before {
+        content: "\e801";
+        color: #fff;
+        background: #00b207;
+    }
+
+    .instagram:before {
+        content: "\e804";
+    }
+
+    .pinterest:before {
+        content: "\e803";
+    }
+
+    .twitter:before {
+        content: "\e802";
+    }
+}
