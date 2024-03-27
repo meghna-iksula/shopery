@@ -98,6 +98,7 @@
         }
     }
 
+    //Return to shop and Update cart actions
     .cart-container {
         .action.continue,
         .action.update {
@@ -122,8 +123,10 @@
     .form-cart {
         width: 68%;
     }
-
+    //Summary block
     .cart-summary {
+        position: relative;
+        top: 0 !important;
         width: 30%;
         .summary.title {
             font-size: 20px;
@@ -159,6 +162,8 @@
         }
     }
 }
+
+//Discount coupon block
 .block.discount {
     margin: 50px 0;
     .title {
@@ -206,7 +211,7 @@
 }
 
 // Mobile Specific styles
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1090px) {
     .checkout-cart-index {
         .cart-container {
             .form-cart,
@@ -220,6 +225,37 @@
                 top: 10px;
                 right: 10px;
                 transform: none;
+            }
+        }
+        
+        .cart.main.actions {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cart-container {
+            .action.continue,
+            .action.update {
+                margin: 0;
+            }
+        }
+    }
+    .block.discount {
+        #discount-coupon-form {
+            .fieldset {
+                display: block;
+            }
+            .field {
+                display: block;
+            }
+            .control {
+                width: 100%;
+                input {
+                    width: 100%;
+                }
+            }
+            .actions-toolbar {
+                margin-left: 0;
             }
         }
     }

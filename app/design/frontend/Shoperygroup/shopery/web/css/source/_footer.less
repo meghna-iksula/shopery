@@ -13,7 +13,7 @@
     background: #e6e6e6;
     color: #1a1a1a;
     padding: 30px;
-    
+
     //Text content block
     .subscribe-our-newsletter {
         max-width: 400px;
@@ -36,7 +36,6 @@
     float: none;
     margin: 20px 0;
 }
-
 
 .form.subscribe {
     .action.subscribe.primary {
@@ -71,7 +70,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
-    
+
     //Footer logo and text container wrapper
     .logo-content-wrapper {
         width: 350px;
@@ -87,7 +86,7 @@
             text-align: left;
             color: #999999;
         }
-        
+
         //Contact information
         .contact-links {
             span a {
@@ -165,6 +164,17 @@
             img {
                 object-fit: contain;
                 padding: 5px;
+            }
+        }
+    }
+}
+
+// Mobile Specific styles
+@media only screen and (max-width: 768px) {
+    .content-wrapper {
+        .links-wrapper {
+            .links-content {
+                min-width: 150px;
             }
         }
     }
