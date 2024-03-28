@@ -9,11 +9,13 @@
 
 .headerWrapper {
     margin: 0;
+
     .headerdetailswrapper {
         padding: 10px 30px;
         display: flex;
         justify-content: space-between;
         background: #fff;
+
         .location::before {
             background: url("../../images/location.svg");
         }
@@ -73,6 +75,7 @@
 
     .bottomHeaderwrapper {
         padding: 15px 30px 0;
+
         .nav-toggle::before {
             font-family: "icomoon";
             content: "\e905";
@@ -149,6 +152,10 @@
                 margin-left: 25px;
                 margin-top: 0;
                 display: flex;
+
+                .minicart-items-wrapper {
+                    max-height: 200px;
+                }
 
                 .action.close::before {
                     font-size: 16px;
@@ -306,7 +313,9 @@
 }
 
 //Different background colours for different pages.
-.category-shop, .checkout-cart-index {
+.category-shop,
+.catalog-product-view,
+.checkout-cart-index {
     .headerWrapper {
         .headerdetailswrapper {
             background: #333333;

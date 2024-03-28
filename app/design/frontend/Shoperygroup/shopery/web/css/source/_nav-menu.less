@@ -2,7 +2,7 @@
     margin-bottom: 0;
     position: sticky;
     top: 118px;
-    z-index: 99;
+    z-index: 10;
 
 
     .navigation {
@@ -100,6 +100,7 @@
     .sections.nav-sections {
         position: fixed;
         top: 0;
+        z-index: 99;
         .navigation {
             background: #fff;
 
@@ -147,6 +148,7 @@
 
 //Different background colours for different pages.
 .category-shop,
+.catalog-product-view,
 .checkout-cart-index {
     .sections.nav-sections {
         margin-bottom: 0;
@@ -169,6 +171,9 @@
         .contact-link-wrapper {
             .contact-nav-link a {
                 color: #666666;
+                &:hover {
+                    color: #00b207;
+                }
             }
         }
     }
