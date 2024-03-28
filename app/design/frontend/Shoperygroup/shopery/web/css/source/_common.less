@@ -6,6 +6,10 @@
     display: none;
 }
 
+.page-main {
+    margin-top: 30px;
+}
+
 .cms-home {
     .page-title-wrapper {
         display: none;
@@ -40,6 +44,13 @@
 .top-container,
 .page-main {
     max-width: none;
+}
+
+//Displaying Breadcrumbs on selective pages
+body:is(.catalog-product-view, .category-shop){
+    .breadcrumbs {
+        display: block;
+    }
 }
 
 //Displaying the hidden navigation-menu in the Checkout page.

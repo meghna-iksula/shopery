@@ -25,8 +25,10 @@
         </span>
     </a>
     <span class="minicart-total-price" data-bind="scope: 'minicart_content'">
+        <!-- ko if: getCartParam('summary_count') -->
         <span class="minicart-total-label">Shopping cart:</span>
         <span class="minicart-total-value" data-bind="html: getCartParam('subtotal')"></span>
+        <!-- /ko -->
     </span>
     <?php if ($block->getIsNeedToDisplaySideBar()):?>
         <div class="block block-minicart"

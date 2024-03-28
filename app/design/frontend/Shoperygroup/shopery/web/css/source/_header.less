@@ -153,8 +153,32 @@
                 margin-top: 0;
                 display: flex;
 
+                .block-minicart .block-content>.actions>.primary .action.primary {
+                    background: #00b207;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19.2px;
+                    border: none;
+
+                    &:hover {
+                        background: #2c742f;
+                    }
+                }
+
                 .minicart-items-wrapper {
                     max-height: 200px;
+                }
+
+                .minicart-items-wrapper {
+                    .product-item {
+                        &:hover {
+                            box-shadow: none;
+                        }
+
+                        .product-item-name a {
+                            color: #1a1a1a;
+                        }
+                    }
                 }
 
                 .action.close::before {
@@ -315,7 +339,8 @@
 //Different background colours for different pages.
 .category-shop,
 .catalog-product-view,
-.checkout-cart-index {
+.checkout-cart-index,
+.checkout-index-index {
     .headerWrapper {
         .headerdetailswrapper {
             background: #333333;

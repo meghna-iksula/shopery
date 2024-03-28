@@ -41,7 +41,8 @@
         <move element="top.search" destination="searchcontainer" after="logo" />
         <move element="minicart" destination="rightdetailwrapper" after="wishlistLink" />
         <move element="currency" destination="elements-wrapper" before="-" />
-        <move element="authorization-link" destination="elements-wrapper" after="currency" />
+        <move element="store_language" destination="elements-wrapper" after="currency" />
+        <move element="authorization-link" destination="elements-wrapper" after="store_language" />
 
         <!-- Navigation-Menu -->
         <referenceContainer name="page.top">
@@ -71,7 +72,7 @@
         <referenceBlock name="register-link" remove="true" />
         <referenceBlock name="header" remove="true" />
         <referenceBlock name="currency" remove="false" />
-        <referenceBlock name="store-language" remove="false"/>
+        <referenceBlock name="store_language" remove="false"/>
         <referenceBlock name="footer_links" remove="true" />
         <referenceBlock name="copyright" remove="true" />
         <referenceBlock name="report.bugs" remove="true" />
