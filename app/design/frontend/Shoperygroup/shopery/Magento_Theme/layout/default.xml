@@ -41,7 +41,8 @@
         <move element="top.search" destination="searchcontainer" after="logo" />
         <move element="minicart" destination="rightdetailwrapper" after="wishlistLink" />
         <move element="currency" destination="elements-wrapper" before="-" />
-        <move element="authorization-link" destination="elements-wrapper" after="currency" />
+        <move element="store_language" destination="elements-wrapper" after="currency" />
+        <move element="authorization-link" destination="elements-wrapper" after="store_language" />
 
         <!-- Navigation-Menu -->
         <referenceContainer name="page.top">
@@ -58,18 +59,23 @@
 
         <!-- Footer -->
         <referenceContainer name="footer">
-        <container name="footerwrapper" htmlTag="div" /> 
+            <container name="footer-top-wrapper" htmlTag="div" htmlClass="footer-top-wrapper">
+                <block class="Magento\Framework\View\Element\Template" name="subscribe.letter" template="Magento_Theme::html/subscribe-letter.phtml" />
+                <block class="Magento\Framework\View\Element\Template" name="social.media.links" template="Magento_Theme::html/social-media-links.phtml" />
+            </container>
+            <container name="footerwrapper" htmlTag="div" /> 
         </referenceContainer>
+
         <move element="absolute_footer" destination="footerwrapper" after="-"/>
+        <move element="form.subscribe" destination="footer-top-wrapper" after="subscribe.letter"/>
         <referenceBlock name="my-account-link" remove="true" />
         <referenceBlock name="register-link" remove="true" />
         <referenceBlock name="header" remove="true" />
         <referenceBlock name="currency" remove="false" />
-        <referenceBlock name="store-language" remove="false"/>
+        <referenceBlock name="store_language" remove="false"/>
         <referenceBlock name="footer_links" remove="true" />
         <referenceBlock name="copyright" remove="true" />
         <referenceBlock name="report.bugs" remove="true" />
         <referenceBlock name="store_switcher" remove="true" />
-        <referenceBlock name="form.subscribe" remove="true" />
     </body>
 </page>

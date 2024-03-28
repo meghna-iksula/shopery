@@ -1,0 +1,198 @@
+//Product styles on the Product details page
+.products.wrapper {
+    margin: 30px;
+}
+
+.page-layout-1column {
+    .product.media {
+        width: 45%;
+    }
+
+    .product-info-main {
+        width: 50%;
+
+        .page-title-wrapper.product {
+            display: inline-block;
+        }
+
+        .product-reviews-summary {
+            display: inline-block;
+            margin: 0;
+
+            .rating-summary {
+                left: 0;
+            }
+
+            .reviews-actions {
+                .action.add {
+                    display: none;
+                }
+
+                a {
+                    color: #666666;
+                }
+            }
+        }
+
+        .product.attribute.sku {
+            margin: 4px 0;
+        }
+
+        .price-wrapper .price {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            text-align: left;
+            color: #2c742f;
+        }
+
+        //Product Quantity, cart and wishlist block
+        .box-tocart {
+            .field.qty {
+                float: inline-start;
+            }
+
+            .actions {
+                display: flex;
+
+                .action.towishlist {
+                    display: inline-flex;
+                    margin-inline-start: 5px;
+                    background: none;
+                    border: none;
+
+                    span {
+                        display: none;
+                    }
+
+                    &::before {
+                        font-family: "icomoon";
+                        content: "\e601";
+                        font-size: 22px;
+                        font-weight: normal;
+                        background: #20b52633;
+                        color: #2c742f;
+                        line-height: normal;
+                        width: auto;
+                        padding: 12px;
+                        border-radius: 50%;
+                    }
+                    &:hover {
+                        &::before {
+                            color: #fff;
+                            background: #00b207;
+                        }
+                    }
+                }
+            }
+        }
+        .action.tocompare {
+            display: none;
+        }
+
+        //Product description
+        .product.attribute.overview {
+            max-width: 560px;
+            margin-inline-end: 10px;
+        }
+    }
+}
+
+//Product title
+.product-info-main .page-title-wrapper .page-title {
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    color: #1a1a1a;
+    margin-top: -6px;
+}
+
+//Stock avaiability info
+.product-info-main {
+    .stock.available,
+    .stock.unavailable {
+        text-transform: capitalize;
+        padding: 4px 8px;
+        border-radius: 4px;
+        background: #20b52633;
+        font-weight: 400;
+        color: #2c742f;
+        margin-inline-start: 5px;
+    }
+}
+
+//Product brand and social links
+.brand-links,
+.product-brand,
+.product-links {
+    display: flex;
+    align-items: center;
+}
+.brand-links {
+    justify-content: space-between;
+
+    span {
+        margin-inline-end: 10px;
+    }
+}
+
+//Product Add to cart button
+.product-add-form {
+    .fieldset {
+        button.action.primary.tocart {
+            width: 447px;
+            padding: 16px 40px;
+            gap: 16px;
+            border-radius: 43px;
+            font-weight: 600;
+            background: #00b207;
+            border: none;
+
+            span::after {
+                font-family: "icomoon";
+                content: "\e901";
+                font-size: 20px;
+                font-weight: normal;
+                margin-inline-start: 8px;
+                position: absolute;
+            }
+
+            &:hover {
+                color: #2c742f;
+                background: #20b52633;
+                border: 1px solid #2c742f;
+            }
+        }
+    }
+}
+
+//Product image
+.product.media {
+    .fotorama__stage__frame .fotorama__img {
+        max-width: none;
+        max-height: none;
+        width: 180%;
+        height: auto;
+    }
+}
+
+//Product reviews
+.catalog-product-view {
+    #reviews {
+        display: none;
+    }
+}
+
+// Mobile Specific styles
+@media only screen and (max-width: 900px) {
+    .page-layout-1column {
+        .product.media {
+            width: 100%;
+        }
+
+        .product-info-main {
+            width: 100%;
+        }
+    }
+}
