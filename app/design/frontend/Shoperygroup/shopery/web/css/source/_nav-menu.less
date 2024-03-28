@@ -1,6 +1,6 @@
 .sections.nav-sections {
     position: sticky;
-    top: 118px;
+    top: 119px;
     z-index: 10;
     box-shadow: 0 0 5px 0 #999999;
     margin-bottom: 0;
@@ -146,11 +146,8 @@
     }
 }
 
-//Different background colours for different pages.
-.category-shop,
-.catalog-product-view,
-.checkout-cart-index,
-.checkout-index-index {
+// Switching background colours for different pages.
+body:not(.category-home, .customer-account-login, .contact-index-index) {
     .sections.nav-sections {
         .navigation {
             background: #fff;
