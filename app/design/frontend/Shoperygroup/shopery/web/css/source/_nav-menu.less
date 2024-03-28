@@ -86,12 +86,12 @@
         }
     }
 
-    .navigation .level0.active>.level-top,
-    .navigation .level0.has-active>.level-top,
-    .navigation .level0>.level-top:hover,
-    .navigation .level0>.level-top.ui-state-focus {
+    .navigation .level0.active > .level-top,
+    .navigation .level0.has-active > .level-top,
+    .navigation .level0 > .level-top:hover,
+    .navigation .level0 > .level-top.ui-state-focus {
         border: none;
-        color: #fff
+        color: #fff;
     }
 }
 
@@ -131,23 +131,34 @@
             }
         }
 
-        .navigation .level0.active>.level-top,
-        .navigation .level0.has-active>.level-top,
-        .navigation .level0>.level-top:hover,
-        .navigation .level0>.level-top.ui-state-focus {
+        .navigation .level0.active > .level-top,
+        .navigation .level0.has-active > .level-top,
+        .navigation .level0 > .level-top:hover,
+        .navigation .level0 > .level-top.ui-state-focus {
             border: none;
             color: #1a1a1a;
         }
     }
 
-    .navigation .level0.active>a:not(.ui-state-active) span:not(.ui-menu-icon),
-    .navigation .level0.has-active>a:not(.ui-state-active) span:not(.ui-menu-icon) {
+    .navigation
+        .level0.active
+        > a:not(.ui-state-active)
+        span:not(.ui-menu-icon),
+    .navigation
+        .level0.has-active
+        > a:not(.ui-state-active)
+        span:not(.ui-menu-icon) {
         margin-left: 0;
     }
 }
 
 // Switching background colours for different pages.
-body:not(.category-home, .customer-account-login, .contact-index-index) {
+body:is(
+        .category-shop,
+        .catalog-product-view,
+        .checkout-cart-index,
+        .checkout-index-index
+    ) {
     .sections.nav-sections {
         .navigation {
             background: #fff;
@@ -157,10 +168,10 @@ body:not(.category-home, .customer-account-login, .contact-index-index) {
             }
         }
 
-        .navigation .level0.active>.level-top,
-        .navigation .level0.has-active>.level-top,
-        .navigation .level0>.level-top:hover,
-        .navigation .level0>.level-top.ui-state-focus {
+        .navigation .level0.active > .level-top,
+        .navigation .level0.has-active > .level-top,
+        .navigation .level0 > .level-top:hover,
+        .navigation .level0 > .level-top.ui-state-focus {
             color: #00b207;
         }
 

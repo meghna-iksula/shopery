@@ -154,7 +154,11 @@
                 margin-top: 0;
                 display: flex;
 
-                .block-minicart .block-content>.actions>.primary .action.primary {
+                .block-minicart
+                    .block-content
+                    > .actions
+                    > .primary
+                    .action.primary {
                     background: #00b207;
                     font-size: 16px;
                     font-weight: 600;
@@ -338,7 +342,12 @@
 }
 
 // Switching top-header background colours for different pages.
-body:not(.category-home, .customer-account-login, .contact-index-index) {
+body:is(
+        .category-shop,
+        .catalog-product-view,
+        .checkout-cart-index,
+        .checkout-index-index
+    ) {
     .headerWrapper {
         .headerdetailswrapper {
             background: #333333;
