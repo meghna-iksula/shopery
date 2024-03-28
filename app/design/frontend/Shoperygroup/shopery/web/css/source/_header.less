@@ -11,7 +11,7 @@
     margin: 0;
 
     .headerdetailswrapper {
-        padding: 10px 30px;
+        padding: 8px 30px;
         display: flex;
         justify-content: space-between;
         background: #fff;
@@ -23,6 +23,7 @@
 
     .elements-wrapper {
         display: flex;
+        align-items: center;
         font-size: 12px;
 
         a {
@@ -74,7 +75,7 @@
     }
 
     .bottomHeaderwrapper {
-        padding: 15px 30px 0;
+        padding: 20px 30px 0;
 
         .nav-toggle::before {
             font-family: "icomoon";
@@ -336,11 +337,8 @@
     }
 }
 
-//Different background colours for different pages.
-.category-shop,
-.catalog-product-view,
-.checkout-cart-index,
-.checkout-index-index {
+// Switching top-header background colours for different pages.
+body:not(.category-home, .customer-account-login, .contact-index-index) {
     .headerWrapper {
         .headerdetailswrapper {
             background: #333333;
