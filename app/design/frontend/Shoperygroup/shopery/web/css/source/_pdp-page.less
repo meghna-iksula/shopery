@@ -77,6 +77,7 @@
                         padding: 12px;
                         border-radius: 50%;
                     }
+
                     &:hover {
                         &::before {
                             color: #fff;
@@ -86,6 +87,7 @@
                 }
             }
         }
+
         .action.tocompare {
             display: none;
         }
@@ -129,6 +131,7 @@
     display: flex;
     align-items: center;
 }
+
 .brand-links {
     justify-content: space-between;
 
@@ -142,6 +145,11 @@
     .fieldset {
         button.action.primary.tocart {
             width: 447px;
+
+            @media (max-width: 900px) {
+                width: 300px;
+            }
+
             padding: 16px 40px;
             gap: 16px;
             border-radius: 43px;
@@ -185,7 +193,7 @@
 }
 
 // Mobile Specific styles
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
     .page-layout-1column {
         .product.media {
             width: 100%;
