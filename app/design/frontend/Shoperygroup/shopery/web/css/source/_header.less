@@ -12,7 +12,6 @@
 
     .headerdetailswrapper {
         padding: 8px 30px;
-        padding: 8px 30px;
         display: flex;
         justify-content: space-between;
         background: #fff;
@@ -24,7 +23,6 @@
 
     .elements-wrapper {
         display: flex;
-        align-items: center;
         align-items: center;
         font-size: 12px;
 
@@ -77,8 +75,7 @@
     }
 
     .bottomHeaderwrapper {
-        padding: 20px 30px 0;
-        padding: 20px 30px 0;
+        padding: 30px 30px 16px;
 
         .nav-toggle::before {
             font-family: "icomoon";
@@ -195,10 +192,13 @@
 
                 .action.showcart {
                     &:before {
-                        font-family: "icomoon";
-                        content: "\e901";
-                        font-size: 26px;
-                        color: #1a1a1a;
+                        // font-family: "icomoon";
+                        // content: "\e901";
+                        // color: #1a1a1a;
+                        // font-size: 26px;
+                        width: 32px;
+                        height: 32px;
+                        content: url('../images/Bag.svg');
                     }
 
                     &:hover {
@@ -211,17 +211,16 @@
                         background: #2c742f;
                         box-shadow: 0 0 2px 2px #fff;
                         min-width: auto;
-                        height: 16px;
-                        width: 16px;
-                        aspect-ratio: 1;
+                        height: 18px;
+                        width: 18px;
                         border-radius: 50%;
                         padding: 0;
-                        margin: 0;
+                        margin: 0 -5px 0 0;
                         font-size: 10px;
                         font-weight: 600;
-                        line-height: 17px;
+                        line-height: 18px;
                         position: relative;
-                        right: 12px;
+                        right: 18px;
                         top: -4px;
                     }
                 }
@@ -249,19 +248,20 @@
 
             .link.wishlist {
                 a {
-                    position: relative;
-                    top: -2px;
-
+                    display: inline-flex;
+                    align-items: center;
                     &::before {
-                        font-family: "icomoon";
-                        content: "\e601";
-                        font-size: 26px;
-                        color: #1a1a1a;
+                        // font-family: "icomoon";
+                        // content: "\e601";
+                        // color: #1a1a1a;
+                        // font-size: 26px;
+                        width: 32px;
+                        height: 32px;
+                        content: url('../images/Heart.svg');
                     }
 
                     &:hover {
                         text-decoration: none;
-
                         &::before {
                             color: #2c742f;
                         }
@@ -318,8 +318,6 @@
             .rightdetailwrapper {
                 .link.wishlist {
                     a {
-                        top: 0;
-
                         &::before {
                             font-size: 24px;
                         }
@@ -349,6 +347,7 @@ body:is(
         .category-shop,
         .catalog-product-view,
         .page-layout-category-full-width,
+        .wishlist-index-index,
         .checkout-cart-index,
         .checkout-index-index
     ) {

@@ -1,0 +1,65 @@
+.catalog-category-view  .category-view > .page-main {
+    margin: 0;
+}
+
+.catalog-category-view {
+    .page-title-wrapper {
+        display: none;
+    }
+
+    .block.filter {
+        .block-subtitle {
+            display: none;
+        }
+
+        .block-title {
+            width: fit-content;
+            position: relative;
+            padding: 14px 32px;
+            border-radius: 43px;
+            background: #00b207;
+            color: #fff;
+            display: inline-flex;
+
+            strong {
+                font-size: 14px;
+                font-weight: 600;
+                margin-inline-end: 10px;
+            }
+
+            &::after {
+                content: url("../images/Filter.svg");
+                width: 20px;
+                height: 17px;
+            }
+        }
+
+        .filter-options-title,
+        .filter-label {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            color: #1a1a1a;
+
+            &::after {
+                content: "";
+            }
+        }
+
+        .filter-options-content {
+            ol li {
+                margin-bottom: 10px;
+                a {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    color: #1a1a1a;
+
+                    .count {
+                        margin-inline-start: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 .sections.nav-sections {
     position: sticky;
-    top: 119px;
+    top: 145px;
     z-index: 10;
     box-shadow: 0 0 5px 0 #999999;
     margin-bottom: 0;
@@ -16,7 +16,7 @@
 
             li {
                 min-width: 80px;
-                padding: 10px 0;
+                padding: 15px 0;
                 cursor: pointer;
                 font-weight: 500;
                 font-size: 14px;
@@ -50,12 +50,14 @@
             li.parent {
                 .submenu {
                     padding: 8px;
-
-                    li:hover {
-                        font-weight: 600;
-
-                        a {
-                            background: #fff;
+                    li {
+                        padding: 10px 0;
+                        &:hover {
+                            font-weight: 600;
+    
+                            a {
+                                background: #fff;
+                            }
                         }
                     }
 
@@ -157,6 +159,7 @@ body:is(
         .category-shop,
         .catalog-product-view,
         .page-layout-category-full-width,
+        .wishlist-index-index,
         .checkout-cart-index,
         .checkout-index-index
     ) {
