@@ -1,6 +1,6 @@
 .page-header {
     width: 100%;
-    position: sticky;
+    position: relative;
     top: 0;
     background: #fff;
     z-index: 99;
@@ -177,6 +177,7 @@
                 .minicart-items-wrapper {
                     .product-item {
                         &:hover {
+                            border: none;
                             box-shadow: none;
                         }
 
@@ -296,6 +297,10 @@
 
 // Mobile Specific styles
 @media only screen and (max-width: 768px) {
+    .page-header {
+        position: sticky;
+    }
+
     .headerWrapper {
         margin: 0 10px 0 50px;
 
@@ -349,7 +354,8 @@ body:is(
         .page-layout-category-full-width,
         .wishlist-index-index,
         .checkout-cart-index,
-        .checkout-index-index
+        .checkout-index-index,
+        .catalogsearch-result-index
     ) {
     .headerWrapper {
         .headerdetailswrapper {

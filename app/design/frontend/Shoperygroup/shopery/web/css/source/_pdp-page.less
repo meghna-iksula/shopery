@@ -22,7 +22,7 @@
             .rating-summary {
                 left: 0;
             }
-            
+
             .rating-summary .rating-result {
                 & > span:before {
                     color: #FF8A00;
@@ -54,12 +54,45 @@
 
         //Product Quantity, cart and wishlist block
         .box-tocart {
+            
+            .fieldset {
+                margin: 20px 0;
+            }
+
             .field.qty {
                 float: inline-start;
+                margin: 0;
+            }
+
+            .label {
+                display: none;
+            }
+
+            .control {
+                display: flex;
+                margin-inline-end: 8px; 
+                .qty-minus, .qty-plus {
+                    font-size: 22px;
+                    margin-inline: 8px;
+                    a {
+                        display: inline-flex;
+                        align-items: center;
+                        height: 100%;
+                        color: #1a1a1a;
+                        font-weight: 400;
+                        text-decoration: none;
+                    }
+                }
+                .input-text.qty {
+                    font-family: 'Poppins';
+                    font-size: 18px;
+                    font-weight: 400;
+                } 
             }
 
             .actions {
                 display: flex;
+                padding: 0;
 
                 .action.towishlist {
                     display: inline-flex;
