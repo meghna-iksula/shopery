@@ -10,6 +10,11 @@
         <referenceBlock name="product.info.main">
             <block class="Magento\Framework\View\Element\Template" name="brand.social.links" template="Magento_Theme::html/brand-social-links.phtml" />
         </referenceBlock>
+        <referenceBlock name="product.reviews.wrapper">
+            <arguments>
+                <argument name="title" translate="true" xsi:type="string">Customer Feedback</argument>
+            </arguments>
+        </referenceBlock> 
         <move element="page.main.title" destination="product.info.main" before="-"/>
         <move element="product.info.type" destination="product.info.main" after="page.main.title"/>
         <move element="product.info.review" destination="product.info.price" before="-"/>
