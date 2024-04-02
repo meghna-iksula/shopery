@@ -296,6 +296,8 @@
     .meat-block,
     .fruits-block {
         border-radius: 8px;
+        min-height: 500px;
+        margin: 10px;
 
         .first-text-block {
             font-size: 14px;
@@ -320,8 +322,8 @@
             font-weight: 400;
             line-height: 27px;
             margin-bottom: 20px;
-
         }
+        
         a {
             display: inline-block;
             padding: 12px 30px;
@@ -330,25 +332,37 @@
             color: #00B207;
             text-decoration: none;
             border: 1px solid transparent;
+            
             &::after {
                 font-family: "icomoon";
                 content: "\e909";
                 margin-left: 10px;
             }
+            
             &:hover {
                 color: #2c742f;
                 border-color: #2c742f;
             }
         }
     }
-
+    
     .veggies-block,
     .meat-block {
         color: #fff;
     }
 
+    .meat-block .second-text-block span {
+        color: #FF8A00;
+    }
+    
     .fruits-block {
         color: #1a1a1a;
+        .second-text-block span{
+            padding: 6px 12px;
+            background: #1a1a1a;
+            color: #FCC900;
+            border-radius: 5px;
+        }
     }
 }
 
@@ -370,6 +384,32 @@
 
             img {
                 max-width: 150px;
+            }
+        }
+    }
+
+    .view-link-block {
+        top: 15px;
+        right: 15px;
+    }
+
+    .banner-group {
+
+        .veggies-block,
+        .meat-block,
+        .fruits-block {
+            min-height: 420px;
+
+            h2 {
+                font-size: 32px;
+            }
+
+            .second-text-block {
+                font-size: 16px;
+            }
+
+            a {
+                padding: 10px 22px;
             }
         }
     }

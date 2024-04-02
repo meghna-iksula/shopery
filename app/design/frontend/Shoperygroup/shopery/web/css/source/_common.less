@@ -42,8 +42,8 @@
 .page-header .header.panel,
 .header.content,
 .footer.content,
-.page-wrapper > .widget,
-.page-wrapper > .page-bottom,
+.page-wrapper>.widget,
+.page-wrapper>.page-bottom,
 .block.category.event,
 .top-container,
 .page-main {
@@ -96,6 +96,12 @@ body:is(.catalog-product-view, .category-shop) {
 .block-heading {
     font-weight: 600;
     margin: 15px 30px;
+    font-size: 26px;
+
+    @media (max-width: 768px) {
+        margin: 15px;
+        font-size: 20px;
+    }
 }
 
 //Minicart actions
