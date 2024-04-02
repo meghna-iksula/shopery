@@ -3,12 +3,25 @@
     margin: 0;
 }
 
+.page-layout-2columns-left {
+    .column.main {
+        width: 80%;
+    }
+
+    .sidebar.sidebar-main,
+    .sidebar.sidebar-additional {
+        width: 20%;
+    }
+}
+
 .sidebar.sidebar-additional {
     .block-wishlist {
         display: none;
     }
+
     .actions-toolbar {
         max-width: 195px;
+
         .action.tocart.primary {
             background: #00b207;
             color: #fff;
@@ -24,6 +37,7 @@
                 border: 1px solid #2c742f;
             }
         }
+
         .secondary a.action {
             margin-top: 10px;
             color: #1a1a1a;
@@ -78,6 +92,7 @@
         .filter-options-content {
             ol li {
                 margin-bottom: 10px;
+
                 a {
                     font-size: 14px;
                     font-weight: 400;
@@ -89,6 +104,99 @@
                     }
                 }
             }
+        }
+    }
+}
+
+// Sidebar Banner block
+.sidebar.sidebar-additional {
+    // Sale Banner
+    .sidebar-sale-block {
+        min-height: 260px;
+        border-radius: 8px;
+
+        .discount-block {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 36px;
+            color: #1a1a1a;
+            margin: 0;
+
+            span {
+                color: #ff8a00;
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 38.4px;
+            }
+        }
+
+        .text-block {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #4d4d4d;
+        }
+
+        .shop-link {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+            text-decoration: none;
+            color: #00b207;
+            display: inline-flex;
+            align-items: center;
+
+            &::after {
+                font-family: "icomoon";
+                content: "\e909";
+                margin-left: 10px;
+            }
+
+            &:hover {
+                color: #2c742f;
+            }
+        }
+    }
+
+    // Sale Products
+    .sale-products-block {
+        .products-grid.grid {
+            margin-inline: 0;
+            .product-items.widget-product-grid {
+                text-align: justify;
+            }
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            color: #1a1a1a;
+        }
+        .product-item-info {
+            display: flex;
+
+            .product-item-photo {
+                margin: 0 20px 10px 0;
+            }
+
+            .product-image-container {
+                width: 70px !important;
+            }
+
+            .product-item-details {
+                .product-item-name,
+                .product-reviews-summary {
+                    margin: 0;
+                }
+
+                .product-item-inner {
+                    display: none;
+                }
+            }
+        }
+        .product-item:hover {
+            border: 1px solid #00b207;
+            box-shadow: 0px 0px 12px 0px #20b52652;
         }
     }
 }

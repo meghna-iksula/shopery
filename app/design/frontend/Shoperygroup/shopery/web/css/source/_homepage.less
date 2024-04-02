@@ -30,6 +30,9 @@
     margin-inline: 0;
 
     .product-item {
+        border: 1px solid #e6e6e6;
+        border-radius: 6px;
+
         .product-item-info {
             position: relative;
 
@@ -50,6 +53,9 @@
                     font-size: 14px;
                     line-height: 21px;
                     color: #4d4d4d;
+                    a {
+                        text-decoration: none;
+                    }
                 }
 
                 .price-box {
@@ -64,7 +70,7 @@
                 }
 
                 .rating-summary .rating-result:before,
-                .rating-summary .rating-result>span:before {
+                .rating-summary .rating-result > span:before {
                     font-size: 24px;
                     height: 24px;
                     line-height: 24px;
@@ -73,7 +79,7 @@
                 .rating-summary .rating-result {
                     margin-left: 0;
 
-                    &>span:before {
+                    & > span:before {
                         color: #ff8a00;
                     }
                 }
@@ -235,6 +241,8 @@
         line-height: normal;
         text-decoration: none;
         color: #00b207;
+        display: inline-flex;
+        align-items: center;
 
         &::after {
             font-family: "icomoon";
@@ -289,9 +297,8 @@
     }
 }
 
-// Banner group 
+// Banner group
 .banner-group {
-
     .veggies-block,
     .meat-block,
     .fruits-block {
@@ -306,7 +313,6 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             margin: 30px 0 10px;
-
         }
 
         h2 {
@@ -314,7 +320,6 @@
             font-weight: 600;
             line-height: 48px;
             margin: 10px 0;
-
         }
 
         .second-text-block {
@@ -323,44 +328,44 @@
             line-height: 27px;
             margin-bottom: 20px;
         }
-        
-        a {
+
+        .shop-link {
             display: inline-block;
             padding: 12px 30px;
             border-radius: 43px;
             background: #fff;
-            color: #00B207;
+            color: #00b207;
             text-decoration: none;
             border: 1px solid transparent;
-            
+
             &::after {
                 font-family: "icomoon";
                 content: "\e909";
                 margin-left: 10px;
             }
-            
+
             &:hover {
                 color: #2c742f;
                 border-color: #2c742f;
             }
         }
     }
-    
+
     .veggies-block,
     .meat-block {
         color: #fff;
     }
 
     .meat-block .second-text-block span {
-        color: #FF8A00;
+        color: #ff8a00;
     }
-    
+
     .fruits-block {
         color: #1a1a1a;
-        .second-text-block span{
+        .second-text-block span {
             padding: 6px 12px;
             background: #1a1a1a;
-            color: #FCC900;
+            color: #fcc900;
             border-radius: 5px;
         }
     }
@@ -394,7 +399,6 @@
     }
 
     .banner-group {
-
         .veggies-block,
         .meat-block,
         .fruits-block {
@@ -408,7 +412,7 @@
                 font-size: 16px;
             }
 
-            a {
+            .shop-link {
                 padding: 10px 22px;
             }
         }
