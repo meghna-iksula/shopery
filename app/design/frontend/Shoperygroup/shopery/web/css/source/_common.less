@@ -10,6 +10,10 @@
     margin-top: 30px;
 }
 
+.page-bottom {
+    margin: 0 30px !important;
+}
+
 .cms-home {
     .page-title-wrapper {
         display: none;
@@ -38,8 +42,8 @@
 .page-header .header.panel,
 .header.content,
 .footer.content,
-.page-wrapper > .widget,
-.page-wrapper > .page-bottom,
+.page-wrapper>.widget,
+.page-wrapper>.page-bottom,
 .block.category.event,
 .top-container,
 .page-main {
@@ -47,9 +51,34 @@
 }
 
 //Displaying Breadcrumbs on selective pages
-body:is(.catalog-product-view, .category-shop){
+body:is(.catalog-product-view, .category-shop) {
     .breadcrumbs {
         display: block;
+    }
+}
+
+//Designing buttons on contact page on login page
+.contact-index-index,
+.customer-account-login {
+    .fieldset {
+        margin: 0 0 25px;
+    }
+
+    .action.submit.primary,
+    .action.login.primary,
+    .action.create.primary {
+        background: #00b207;
+        color: #fff;
+        font-weight: 500;
+        padding: 10px 20px;
+        border: 1px solid #fff;
+        border-radius: 6px;
+
+        &:hover {
+            color: #2c742f;
+            background: #20b52633;
+            border: 1px solid #2c742f;
+        }
     }
 }
 
@@ -67,6 +96,12 @@ body:is(.catalog-product-view, .category-shop){
 .block-heading {
     font-weight: 600;
     margin: 15px 30px;
+    font-size: 26px;
+
+    @media (max-width: 768px) {
+        margin: 15px;
+        font-size: 20px;
+    }
 }
 
 //Minicart actions
