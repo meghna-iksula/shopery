@@ -12,6 +12,32 @@
     .sidebar.sidebar-additional {
         width: 20%;
     }
+
+    .products-grid.grid {
+        margin-inline: 10px;
+    }
+}
+
+// Toolbar above listed products
+.toolbar-products {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    .sorter {
+        float: none;
+        width: fit-content;
+    }
+    .toolbar-number {
+        font-weight: 600;
+        line-height: 19.2px;
+    }
+    &::before,
+    &::after {
+        display: none;
+    }
 }
 
 .sidebar.sidebar-additional {
@@ -162,16 +188,19 @@
     .sale-products-block {
         .products-grid.grid {
             margin-inline: 0;
+
             .product-items.widget-product-grid {
                 text-align: justify;
             }
         }
+
         h3 {
             font-size: 20px;
             font-weight: 500;
             line-height: 30px;
             color: #1a1a1a;
         }
+
         .product-item-info {
             display: flex;
 
@@ -194,6 +223,7 @@
                 }
             }
         }
+
         .product-item:hover {
             border: 1px solid #00b207;
             box-shadow: 0px 0px 12px 0px #20b52652;
