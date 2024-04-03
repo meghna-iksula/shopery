@@ -158,11 +158,12 @@
                     .block-content
                     > .actions
                     > .primary
-                    .action.primary {
+                    .action.primary.checkout {
                     background: #00b207;
                     font-size: 16px;
                     font-weight: 600;
                     line-height: 19.2px;
+                    border-radius: 43px;
                     border: none;
 
                     &:hover {
@@ -170,14 +171,35 @@
                     }
                 }
 
+                .minicart-items .item-qty {
+                    border: none;
+                }
+
+                .action.viewcart {
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19.2px;
+                    color: #00b207;
+                    text-decoration: none;
+                    &:hover {
+                        color: #2c742f;
+                    }
+                }
+
+                .minicart-widgets {
+                    display: none;
+                }
+
                 .minicart-items-wrapper {
-                    max-height: 200px;
+                    max-height: 230px;
+                    border: none;
                 }
 
                 .minicart-items-wrapper {
                     .product-item {
+                        border: none;
+                        border-bottom: 1px solid #e6e6e6;
                         &:hover {
-                            border: none;
                             box-shadow: none;
                         }
 
@@ -199,7 +221,7 @@
                         // font-size: 26px;
                         width: 32px;
                         height: 32px;
-                        content: url('../images/Bag.svg');
+                        content: url("../images/Bag.svg");
                     }
 
                     &:hover {
@@ -258,7 +280,7 @@
                         // font-size: 26px;
                         width: 32px;
                         height: 32px;
-                        content: url('../images/Heart.svg');
+                        content: url("../images/Heart.svg");
                     }
 
                     &:hover {
