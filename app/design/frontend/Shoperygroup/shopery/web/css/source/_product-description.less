@@ -205,13 +205,16 @@
                 padding: 16px 20px;
             }
 
-            span::after {
-                font-family: "icomoon";
-                content: "\e901";
-                font-size: 20px;
-                font-weight: normal;
-                margin-inline-start: 8px;
-                position: absolute;
+            span {
+                display: inline-flex;
+                &::after {
+                    font-family: "icomoon";
+                    content: "\e901";
+                    font-size: 20px;
+                    font-weight: normal;
+                    margin-inline-start: 8px;
+                    position: relative;
+                }
             }
 
             &:hover {
