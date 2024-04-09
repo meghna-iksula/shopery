@@ -49,9 +49,7 @@
             <referenceBlock name="navigation-sections">
                 <referenceBlock name="store.menu">
                     <referenceBlock name="catalog.topnav">
-                        <container name="contact-nav-link" htmlClass="contact-link-wrapper" htmlTag="div">
-                            <block class="Magento\Framework\View\Element\Template" name="contact-link-block" template="Magento_Theme::html/contact-nav-link.phtml" />
-                        </container>
+                        <block class="Magento\Framework\View\Element\Template" name="contact-link-block" template="Magento_Theme::html/contact-nav-link.phtml" />
                     </referenceBlock>
                 </referenceBlock>
             </referenceBlock>

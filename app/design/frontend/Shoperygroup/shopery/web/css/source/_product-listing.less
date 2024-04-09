@@ -29,11 +29,16 @@
     .sorter {
         float: none;
         width: fit-content;
+        .sorter-options {
+            width: auto;
+        }
     }
+
     .toolbar-number {
         font-weight: 600;
         line-height: 19.2px;
     }
+
     &::before,
     &::after {
         display: none;
@@ -227,6 +232,24 @@
         .product-item:hover {
             border: 1px solid #00b207;
             box-shadow: 0px 0px 12px 0px #20b52652;
+        }
+    }
+}
+
+
+// Mobile Specific styles
+@media only screen and (max-width: 768px) {
+    .page-layout-2columns-left {
+        .products-grid.grid {
+            margin-inline: 0;
+        }
+    }
+    .toolbar-products {
+        font-size: 14px;
+        .sorter {
+            .sorter-options {
+                width: 100px;
+            }
         }
     }
 }
