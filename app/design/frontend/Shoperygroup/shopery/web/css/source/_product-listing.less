@@ -191,51 +191,51 @@
 
     // Sale Products
     .sale-products-block {
-        .products-grid.grid {
-            margin-inline: 0;
-
-            .product-items.widget-product-grid {
-                text-align: justify;
-            }
-        }
-
         h3 {
             font-size: 20px;
             font-weight: 500;
             line-height: 30px;
             color: #1a1a1a;
         }
-
-        .product-item-info {
-            display: flex;
-
-            .product-item-photo {
-                margin: 0 20px 10px 0;
-            }
-
-            .product-image-container {
-                width: 70px !important;
-            }
-
-            .product-item-details {
-                .product-item-name,
-                .product-reviews-summary {
-                    margin: 0;
+        .block.widget {
+            .products-grid {
+                margin-inline: 0;
+                .product-items.widget-product-grid {
+                    text-align: justify;
                 }
+                .product-item {
+                    &:hover {
+                        border: 1px solid #00b207;
+                        box-shadow: 0px 0px 12px 0px #20b52652;
+                    }
 
-                .product-item-inner {
-                    display: none;
+                    .product-item-info {
+                        display: flex;
+
+                        .product-item-photo {
+                            margin: 0 20px 10px 0;
+                        }
+
+                        .product-image-container {
+                            width: 70px !important;
+                        }
+
+                        .product-item-details {
+                            .product-item-name,
+                            .product-reviews-summary {
+                                margin: 0;
+                            }
+
+                            .product-item-inner {
+                                display: none;
+                            }
+                        }
+                    }
                 }
             }
-        }
-
-        .product-item:hover {
-            border: 1px solid #00b207;
-            box-shadow: 0px 0px 12px 0px #20b52652;
         }
     }
 }
-
 
 // Mobile Specific styles
 @media only screen and (max-width: 768px) {
