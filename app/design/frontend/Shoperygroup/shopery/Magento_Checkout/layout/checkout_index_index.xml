@@ -13,6 +13,8 @@
         <referenceBlock name="catalog.compare.link" remove="false" />
         <referenceBlock name="catalog.topnav" remove="false"/>
         <referenceContainer name="footer-container"  remove="false"/>
+
+        <!-- Adding Breadcrumbs on the Checkout page -->
         <referenceBlock name="breadcrumbs">
             <action method="addCrumb">
                 <argument name="crumbName" xsi:type="string">Home</argument>
@@ -29,6 +31,6 @@
                     <item name="label" xsi:type="string">Checkout</item>
                 </argument>
             </action>
-    </referenceBlock>
+        </referenceBlock>
     </body>
 </page>
