@@ -1,0 +1,267 @@
+.first-text-block {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 30px 0 10px;
+}
+
+.second-text-block {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.text-block {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #4d4d4d;
+}
+
+// Banner group
+.banner-group {
+    .veggies-block,
+    .meat-block,
+    .fruits-block {
+        border-radius: 8px;
+        min-height: 500px;
+        margin: 10px;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 48px;
+            margin: 10px 0;
+        }
+
+        .shop-link {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 43px;
+            background: #fff;
+            color: #00b207;
+            text-decoration: none;
+            border: 1px solid transparent;
+
+            &::after {
+                font-family: "icomoon";
+                content: "\e909";
+                margin-left: 10px;
+            }
+
+            &:hover {
+                color: #2c742f;
+                border-color: #2c742f;
+            }
+        }
+    }
+
+    .veggies-block,
+    .meat-block {
+        color: #fff;
+    }
+
+    .meat-block .second-text-block span {
+        color: #ff8a00;
+    }
+
+    .fruits-block {
+        color: #1a1a1a;
+
+        .second-text-block span {
+            padding: 6px 12px;
+            background: #1a1a1a;
+            color: #fcc900;
+            border-radius: 5px;
+        }
+    }
+}
+
+// Top Banner
+.top-banner1-block,
+.top-banner2-block,
+.top-banner3-block {
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.top-banner1,
+.top-banner2,
+.top-banner3 {
+    min-height: 220px;
+}
+
+.top-banner1 {
+    padding: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(
+        98.82deg,
+        rgba(0, 0, 0, 0.6) 10.4%,
+        rgba(0, 0, 0, 0) 59.43%
+    );
+    color: #fff;
+
+    h2 {
+        max-width: 400px;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 57.6px;
+    }
+
+    .banner1-sale-block {
+        border-left: 2px solid #00b207;
+        padding-left: 10px;
+        margin: 20px 0 25px;
+
+        .second-text-block {
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            span {
+                padding: 6px 12px;
+                color: #fff;
+                background: #ff8a00;
+                border-radius: 5px;
+            }
+        }
+
+        .text-block {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            color: #fff;
+        }
+    }
+
+    .shop-link {
+        display: inline-block;
+        padding: 12px 30px;
+        border-radius: 43px;
+        background: #fff;
+        color: #00b207;
+        text-decoration: none;
+        border: 1px solid transparent;
+        width: fit-content;
+
+        &::after {
+            font-family: "icomoon";
+            content: "\e909";
+            margin-left: 10px;
+        }
+
+        &:hover {
+            color: #2c742f;
+            border-color: #2c742f;
+        }
+    }
+}
+
+.top-banner2,
+.top-banner3 {
+    padding: 20px;
+
+    .shop-link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+        color: #00b207;
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        margin-top: 15px;
+
+        &::after {
+            font-family: "icomoon";
+            content: "\e909";
+            margin-left: 10px;
+        }
+
+        &:hover {
+            color: #2c742f;
+        }
+    }
+}
+
+.top-banner2 {
+    .discount-block {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38.4px;
+    }
+
+    .text-block {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #666666;
+    }
+}
+
+.top-banner3 {
+    background: #002603cc;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .first-text-block {
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38.4px;
+        max-width: 340px;
+        margin: 10px;
+    }
+
+    .shop-link:hover {
+        color: #fff;
+    }
+}
+
+// Mobile Specific styles
+@media only screen and (max-width: 768px) {
+    .banner-group {
+        .veggies-block,
+        .meat-block,
+        .fruits-block {
+            min-height: 420px;
+        }
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+
+    .second-text-block {
+        font-size: 16px;
+    }
+
+    .shop-link {
+        padding: 10px 22px;
+    }
+
+    .top-banner1 {
+        padding: 20px;
+        h2 {
+            max-width: 200px;
+            font-size: 26px;
+            line-height: 30.6px;
+        }
+        .banner1-sale-block {
+            margin: 0 0 20px;
+        }
+    }
+}

@@ -44,16 +44,18 @@
             <div class="links-content">
                 <h3>Categories</h3>
                 <ul>
-                    <li><a href="#">Fruit & Vegetables</a></li>
-                    <li><a href="#">Meat & Fish</a></li>
-                    <li><a href="#">Bread & Bakery</a></li>
-                    <li><a href="#">Beauty & Health</a></li>
+                    <li><a href="<?php echo $block->getUrl('shop/fresh-fruit.html'); ?>">Fruit & Vegetables</a></li>
+                    <li><a href="<?php echo $block->getUrl('shop/meat-and-fish.html'); ?>">Meat & Fish</a></li>
+                    <li><a href="<?php echo $block->getUrl('shop/bread-and-bakery.html'); ?>">Bread & Bakery</a></li>
+                    <li><a href="<?php echo $block->getUrl('shop/beauty-and-health.html'); ?>">Beauty & Health</a></li>
                 </ul>
             </div>
         </div>
     </section>
     <section class="footer-bottom-content">
-        <div class="copyright">Ecobazar eCommerce © 2021. All Rights Reserved</div>
+        <div class="copyright">
+            <?= $block->getCopyright() ?>
+        </div>
         <div class="payments">
             <div class="payment-method">
                 <img src="<?php echo $this->getViewFileUrl('images/payments/ApplePay.svg'); ?>" />

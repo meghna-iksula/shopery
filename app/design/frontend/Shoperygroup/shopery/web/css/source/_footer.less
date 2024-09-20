@@ -35,6 +35,11 @@
 .footer.content .block.newsletter {
     float: none;
     margin: 20px 0;
+    .field {
+        .control:before {
+            display: none;
+        }
+    }
 }
 
 .form.subscribe {
@@ -43,11 +48,12 @@
         background: #00b207;
         font-weight: 600;
         padding: 16px 40px;
-        border: none;
+        border: 1px solid #fff;
         border-radius: 43px;
         &:hover {
-            background:#2c742f;
-            color: #fff;
+            color: #2c742f;
+            background: #20b52633;
+            border: 1px solid #2c742f;
         }
     }
     .field.newsletter {
