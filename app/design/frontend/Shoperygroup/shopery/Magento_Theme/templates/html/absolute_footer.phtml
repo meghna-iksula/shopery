@@ -53,7 +53,9 @@
         </div>
     </section>
     <section class="footer-bottom-content">
-        <div class="copyright">Ecobazar eCommerce © 2021. All Rights Reserved</div>
+        <div class="copyright">
+            <?= $block->getCopyright() ?>
+        </div>
         <div class="payments">
             <div class="payment-method">
                 <img src="<?php echo $this->getViewFileUrl('images/payments/ApplePay.svg'); ?>" />
